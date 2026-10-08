@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+
+body {
+    margin: 0;
+    background-color: #f4f6f8;
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #243b53;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+header p {
+    margin-top: 0;
+}
+
+
+nav {
+    background-color: #334e68;
+    text-align: center;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 85%;
+    margin: 30px auto;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.topics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.topic {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #cccccc;
+}
+
+.topic h2 {
+    color: #243b53;
+    border-bottom: 2px solid #9fb3c8;
+}
+
+.learning {
+    background-color: white;
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #cccccc;
+}
+
+.learning h2 {
+    color: #243b53;
+}
+
+footer {
+    background-color: #243b53;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .topics {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px;
+    }
+
+}
